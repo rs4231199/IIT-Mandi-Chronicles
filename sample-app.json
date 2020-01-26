@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "IIT Mandi Chronicles",
+    "slug": "IIT-Mandi-Chronicles",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.1.2",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.paresh.alert",
+      "permissions": [
+        "MANAGE_DOCUMENTS",
+        "READ_CALENDAR",
+        "WRITE_CALENDAR",
+        "READ_EXTERNAL_STORAGE",
+        "VIBRATE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "config": {
+        "googleSignIn": {
+          "apiKey": "",
+          "certificateHash": ""
+        }
+      },
+      "versionCode": 2
+    },
+    "ios": {
+      "bundleIdentifier": "com.paresh.alert",
+      "supportsTablet": true,
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "" 
+        }
+      }
+    }
+  }
+}
+
+//Make a copy of this file by name "app.json". And fill line number 36, 37 and 47.
