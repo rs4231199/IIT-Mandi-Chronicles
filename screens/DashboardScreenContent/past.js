@@ -309,7 +309,7 @@ class mainPost extends React.Component {
           <View style={{ flex: 1, flexDirection: 'column', padding: 2 }}>
             <Text style={{ fontSize: 17, fontWeight: 'bold' }}>Event - { post.Title }</Text>
             <Text style={{ fontSize:13 , color: '#747474' }}>Date & Time : { this.dateFormatting(date.toString()) }</Text>
-            <Text style={{ fontSize:13 , color: '#747474' }}>Uploaded by : { post.uploaded_by.displayName }</Text>
+            <Text style={{ fontSize:13 , color: '#747474' }}>Uploaded by : { post.uploaded_by[2] }</Text>
           </View>
         </View>
         <View style={{ marginLeft: 5, marginRight: 5 }}>
