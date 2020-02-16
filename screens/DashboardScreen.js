@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Alert, View, SafeAreaView, Text, StyleSheet, Image, TouchableOpacity, Linking, Share } from 'react-native';
+import { Alert, View, SafeAreaView, Text, StyleSheet, Image, TouchableOpacity, Linking, Share, ScrollView } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
@@ -68,7 +68,7 @@ const showAlert = () =>{
   );
 }
 
-onShare = async () => {
+const onShare = async () => {
   try {
     const result = await Share.share({
       message:
@@ -104,6 +104,7 @@ const CustomDrawerContentComponent = props => (
         <FontAwesome name="power-off" style={{ fontSize: 30, color: 'white' }} onPress={showAlert}/>
       </View>
     </View>
+    <ScrollView>
     <View>
       <DrawerItems
         activeBackgroundColor={"#DCDCDC"}
@@ -126,6 +127,7 @@ const CustomDrawerContentComponent = props => (
           <Text style={{ marginLeft: 32, fontWeight: 'bold'}}> Share </Text>
       </View>
     </TouchableOpacity>
+    </ScrollView>
   </SafeAreaView>
 );
 
